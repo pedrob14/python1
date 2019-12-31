@@ -1,0 +1,24 @@
+1º No python, declaramos métodos mágicos com duplo underline no início e no fim do nome do método
+Ex: o método __init__ : é o método construtor da classe.
+isto é: será executado quando a classe for instânciada.
+Os parâmetros do método construtor são obrigatórios 
+no momento em que a classe for instânciada.
+
+2º Declaramos atributos privados utilizando duplo
+underline na frente do nome do método
+Ex: __largura, __profundidade (atributos privados de
+uma classe)
+
+3º O decorator @Property indica que o método
+abaixo se trata de uma propriedade.
+ex: O método largura será acessado da mesma forma que 
+um atributo: valor = comodo.largura
+
+4º No python tratamos erros através do bloco "try except"
+ex:def profundidade(self, profundidade):
+   try:
+    self.__profundidade = float(profundidade)
+   except Exception:
+    print('o valor informado da profundidade é inválido')
+
+MD Consultoria Financeira
